@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class EmployeeWage {
+public class EmployeeWage implements EmpWageBuilderInterface {
 
     // private int attendance;
     private int type;
