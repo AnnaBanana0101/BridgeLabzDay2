@@ -23,13 +23,15 @@ public class App {
         System.out.println("For any random day: ");
 
         employeeWage.getAttendance(attendance);
-        daily_wage = employeeWage.getDailyWage(employeeType, attendance);
+        //daily_wage = employeeWage.getDailyWage(employeeType, attendance);
+        daily_wage = company.getDailyWage(employeeType, attendance);
         System.out.println("Daily Wage: " + daily_wage);
         System.out.println(" ");
 
         System.out.println("For a month based on the number of presents: ");
 
-        monthly_wage = employeeWage.getMonthlyWage(employeeType, company);
+        //monthly_wage = employeeWage.getMonthlyWage(employeeType, company);
+        monthly_wage = company.employeeWageBuilder(employeeType);
         System.out.println("Monthly Wage: " + monthly_wage);
 
     }
